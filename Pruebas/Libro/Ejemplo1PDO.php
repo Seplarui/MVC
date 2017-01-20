@@ -26,9 +26,9 @@
     echo "WHILE<BR/>";
     
     while($fila=$resultado->fetch(PDO::FETCH_ASSOC)) {
-        //echo $fila['nombre']. " ".$fila['apellidos']."<br/>";
+        echo $fila['id']." ".$fila['nombre']. " ".$fila['apellidos']."<br/>";
         
-        print_r($fila);
+        //print_r($fila);
     }
     
     print_r($fila);
