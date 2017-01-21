@@ -2,6 +2,6 @@
 
 
 $servidor="localhost";
-$usuario="root";
-$pass="";
+$usuario="alumno";
+$pass="alumno";
 $base_datos="compras";

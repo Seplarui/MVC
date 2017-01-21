@@ -42,3 +42,11 @@ if(!$resultado) {
         print "<p>$valor[id] , $valor[marca]";
     }
 }
+
+$insercion="insert into marca(marca) values(:marca)";
+
+$sentencia=$conex->prepare($insercion);
+//$sentencia->bindValue(":id",'id_nuevo');
+$sentencia->bindValue(":marca", 'Marca_Nueva2');
+$sentencia->execute();
+

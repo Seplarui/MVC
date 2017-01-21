@@ -1,7 +1,8 @@
 <?php
 
 //error_reporting(0);
-
+include_once 'config.php';
+include_once 'conectar.php';
 class Marca_Modelo {
     
     private $bd;
@@ -14,7 +15,7 @@ class Marca_Modelo {
         
     }
     
-        function getMarca_vehiculo() {
+        function getMarca_Vehiculo() {
             
             $consulta=$this->bd->query("select * from marca");
             
@@ -30,12 +31,19 @@ class Marca_Modelo {
     }
 
     
-    function setMarca_vehiculo($marca_vehiculo) {
+    function setMarca_Vehiculo($marca_vehiculo) {
         
-        $consulta="insert into marca values($marca_vehiculo)";
+        //$consulta="insert into marca values($marca_vehiculo)";
+        
+        $consulta="insert into marca(marca) values(:marca)";
+        
+        $sentencia=$this->bd->prepare($consulta);
+        $sentencia->bindValue(":marca", $marca_vehiculo);
+        $sentencia->execute();
         
         
-        $this->marca_vehiculo = $marca_vehiculo;
+        
+        //$this->marca_vehiculo = $marca_vehiculo;
     }
 
     

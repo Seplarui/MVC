@@ -13,7 +13,13 @@ $sentencia->bindValue(":apellidos", "Álvarez");
 
 $sentencia->bindValue(":cuenta", 3342);
 $sentencia->execute();
+echo "Numero de filas ".$sentencia->rowCount();
 
-echo "El último id es ". $base_datos_PDO->lastInsertId();
+$sentencia->bindValue(":id", 01);
+$sentencia->bindValue(":nombre", 'Sebas');
+$sentencia->bindValue(":apellidos",'Sebas');
+$sentencia->bindValue(":cuenta", "1111");
+$sentencia->execute();
 
+echo "Numero de filas ".$sentencia->rowCount();
 ?>
