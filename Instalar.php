@@ -33,9 +33,10 @@ PRIMARY KEY(id)) DEFAULT CHARSET=utf8 engine=innodb;")) {
 
 if ($db->query("create table seplarui.modelo(idmodelo int(5) not null auto_increment,
 modelo varchar(255),
+motor varchar(255),
 idmarca int(5),
-PRIMARY KEY(idmodelo),
-CONSTRAINT FK_MARCA FOREIGN KEY(idmarca) REFERENCES seplarui.marca(id)) DEFAULT CHARSET=utf8 engine=innodb"))
+PRIMARY KEY(idmodelo)
+) DEFAULT CHARSET=utf8 engine=innodb"))
 {
     echo "Creada tabla: MODELO";
 } else {

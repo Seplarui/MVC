@@ -3,8 +3,11 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/W:/xampp/htdocs/Gestion_Vehiculos/Pruebas/Libro/Configuracion.php</file>
-            <file>file:/W:/xampp/htdocs/Gestion_Vehiculos/Pruebas/Libro/Ejemplo1PDO.php</file>
+            <file>file:/W:/xampp/htdocs/Gestion_Vehiculos/Marca_Modelo.php</file>
+            <file>file:/W:/xampp/htdocs/Gestion_Vehiculos/ModeloV_Modelo.php</file>
+            <file>file:/W:/xampp/htdocs/Gestion_Vehiculos/Alta_Vehiculo.php</file>
+            <file>file:/W:/xampp/htdocs/Gestion_Vehiculos/Alta_Modelo.php</file>
+            <file>file:/W:/xampp/htdocs/Gestion_Vehiculos/Instalar.php</file>
         </group>
     </open-files>
 </project-private>
